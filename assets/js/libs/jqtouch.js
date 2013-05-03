@@ -707,7 +707,7 @@
                 $currentPage = $('#jqt > .current');
             }
             
-            // setHash($currentPage.attr('id'));
+            .// setHash($currentPage.attr('id'));
             addPageToHistory($currentPage);
 
             if ($(startHash).length === 1) {

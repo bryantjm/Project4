@@ -645,6 +645,15 @@ font-weight: bold;
 	padding: 16px 20px;
 }
 
+/* map */
+
+#map {
+	width:1050px;
+	height:525px;
+	left:auto;
+	right:auto;
+}
+
 /* JQTouch */
 
 #jqt .scroll button,
