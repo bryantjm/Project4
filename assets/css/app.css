@@ -479,26 +479,26 @@ z-index: 10;
 
 .ctrl-up{
 	position: relative;
-left: 56px;
-bottom: 63px;
+left: 40px;
+bottom: 67px;
 }
 
 .ctrl-down{
 	position: relative;
-left: 13px;
-bottom: 8px;
+left: -1px;
+bottom: 34px;
 }
 
 .ctrl-left{
 	position: relative;
-left: -111px;
-bottom: 36px;
+left: -119px;
+bottom: 49px;
 }
 
 .ctrl-right{
 	position: relative;
-left: 9px;
-bottom: 36px;
+left: -4px;
+bottom: 49px;
 }
 
 .ctrl-select{
@@ -515,15 +515,16 @@ bottom: 3px;
 
 .ctrl-a{
 	position: relative;
-left: 658px;
-bottom: 61px;
+right: -352%;
+bottom: 79px;
 font-weight: bold;
+z-index: 2;
 }
 
 .ctrl-b{
 	position: relative;
-left: 629px;
-bottom: 12px;
+right: -342%;
+bottom: 35px;
 font-weight: bold;
 }
 
@@ -536,6 +537,12 @@ font-weight: bold;
 
 }
 
+.on-off{
+left: 180%;
+
+bottom: -25%;
+
+}
 /* -----------------------------------------
 	Buttons
 ----------------------------------------- */
