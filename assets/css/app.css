@@ -220,11 +220,12 @@ body {
 body { 
 	margin:0; 
 	padding:0; 
+	background-color: rgba(15, 68, 82, 0.83);
 }
  
 /* Make Header Sticky */
 #header_container { 
-	background:rgba(163, 0, 0, 0.95); 
+background: rgba(58, 58, 58, 0.98);
 	border:1px solid #666; 
 	height:50px; left:0; 
 	position:fixed; 
@@ -244,22 +245,30 @@ body {
 #container { 
 	margin:0 auto; 
 	overflow:auto; 
-	padding:80px 0; 
+	padding:0px 0; 
 	width: 80%; 
 	padding-left: 10%;
 	padding-right: 10%;
 }
 
-#content{
-
+#content {
+position: absolute;
+top: 53px;
+left: 10%;
+right: 10%;
+bottom: 40px;
+overflow: hidden;
+margin-bottom: 0%;
+z-index: -1;
 }
  
+
 /* Make Footer Sticky */
 #footer_container { 
-	background:rgba(163, 0, 0, 0.95); 
+	background: rgba(58, 58, 58, 0.98);
 	border:1px solid #666; 
 	bottom:0; 
-	height:50px; 
+	height:9.5%; 
 	left:0; 
 	position: fixed; 
 	width:100%; 
@@ -278,7 +287,7 @@ body {
 width: 0;
 height: 0;
 border-top: 0px solid transparent;
-border-left: 85px solid rgba(163, 0, 0, 1);
+border-left: 85px solid rgba(58, 58, 58, 0.98);
 border-bottom: 85px solid transparent;
 margin: 20px 0 0 30px; 
 position: absolute;
@@ -292,7 +301,7 @@ z-index: 1;
 width: 0;
 height: 0;
 border-top: 0px solid transparent;
-border-right: 85px solid rgba(163, 0, 0, 1);
+border-right: 85px solid rgba(58, 58, 58, 0.98);
 border-bottom: 85px solid transparent;
 margin: 20px 0 0 30px;
 position: relative;
@@ -306,7 +315,7 @@ z-index: 1;
 width: 0;
 height: 0;
 border-top: 100px solid transparent;
-border-left: 100px solid rgba(163, 0, 0, 1);
+border-left: 100px solid rgba(58, 58, 58, 0.98);
 border-bottom: 0px solid transparent;
 margin: 20px 0 0 30px; 
 position: absolute;
@@ -320,7 +329,7 @@ z-index: -1;
 width: 0;
 height: 0;
 border-top: 100px solid transparent;
-border-right: 100px solid rgba(163, 0, 0, 1);
+border-right: 100px solid rgba(58, 58, 58, 0.98);
 border-bottom: 0px solid transparent;
 margin: 20px 0 0 30px;
 position: relative;
@@ -331,7 +340,7 @@ z-index: 1;
 }
 
 .verticalLine2 {
-    border-right: thick solid rgba(163, 0, 0, 1);
+    border-right: thick solid rgba(58, 58, 58, 0.98);
 	position: fixed;
 	border-right-width: 27px;
 	height: 100%;
@@ -340,7 +349,7 @@ z-index: 1;
 }
 
 .verticalLine {
-    border-left: thick solid rgba(163, 0, 0, 1);
+    border-left: thick solid rgba(58, 58, 58, 0.98);
 	position: fixed;
 	border-left-width: 18px;
 	height: 100%;
@@ -464,7 +473,7 @@ z-index: 1;
 .hideB{
 position: fixed;
 bottom: 50px;
-margin-left: 50%;
+margin-left: 37%;
 z-index: 10;
 }
 
