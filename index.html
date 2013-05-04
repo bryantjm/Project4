@@ -14,20 +14,23 @@
 
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="assets/css/themes/vanilla.css" />
 
          <link rel="stylesheet" href="assets/css/app.css"> 
 
  
         <script src="assets/js/libs/modernizr.foundation.js"></script>
 
+  <pre><code><link rel="stylesheet" type="text/css" href="jquery.pageslide.css"></code></pre>
         
 </head>
  
 
-
 <body>
-<!-- BEGIN: Sticky Header -->
 
+
+<!-- BEGIN: Sticky Header -->
+<div id="home"></div>
 
 <div id="header_container">
 
@@ -37,20 +40,18 @@
 
     <!-- Navagation Bar -->
     <ul id="menu">
-    <li><a href="#map" id="mapShow" class="slideup">Map</a>
-        <ul>
-            <li><a href="#map" id="mapShow" class="slideup">Click here to go to the map</a></li>
-        </ul>
-    </li>
     <li>
-        <a href="#new" class="slideup">Add Location</a>
+        <a  href="javascript:$.pageslide({ direction: 'left', href:'#new' })" class=" icon-map-marker" style="font-size: 44px;"></a>
+
         <ul>
-            <li><a href="#new" class="slideup">Click here to add a location to the map</a></li>
+            <li><a  href="#new" class="slideup">Add Location</a></li>
         </ul>
+
     </li>
-    <li><a href="#edit" class="slideup">Edit Location</a>
+    <li><a  href="javascript:$.pageslide({ direction: 'right', href:'#edit' })" class="icon-wrench" style="font-size: 44px;"></a>
+
         <ul>
-            <li><a href="#edit" class="slideup">Click here to edit a location on the map</a></li>
+            <li><a href="#edit" >Edit Location</a></li>
         </ul>
     </li>
     </ul>
@@ -68,21 +69,23 @@
 </div>
 
 <!-- BEGIN: Page Content -->
-<div id="jqt">
+
 
 <div id="container">
     <div id="content">
 
-<!-- Gmaps -->
+<!--
     <a class="button" id="mapIO"><i class="icon-remove"></i> Map</a>
     <a class="button" id="currentLoc"><i class="icon-remove"></i> Locate</a>
+ Gmaps -->
 <!-- Gmaps -->
-<!-- Gmaps -->
-    <div id="map" class="map" style="width:750px;height:500px;left:10%;right:auto"></div>
+
+<div id="jqt">
+    <div id="map" class="map"></div>
     <!-- Gmaps -->
     
     <!--Add/edit location -->
-     <div id="new">
+     <div id="new" style="display: none;">
                
                 <header class="toolbar">
                     <h1>New Location</h1>
@@ -106,7 +109,7 @@
                 
             </div>
             
-            <div id="edit">
+            <div id="edit" style="display: none;">
                 
                 <header class="toolbar">
                     <h1>Edit Location</h1>
@@ -169,14 +172,16 @@
 </div>
 <!-- END: Sticky Footer -->
 
-        <footer>
+      <!--  <footer>
             <p class="copy">&copy; 2013 - Jacob Bryant</p>
         </footer>
-        
+        -->
        
  
         
 <!-- Scripts -->
+
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/libs/jquery.js"><\/script>')</script>
@@ -185,6 +190,8 @@
         <script type="text/javascript" src="assets/js/libs/localstoragedb.js"></script>
         <script type="text/javascript" src="assets/js/mobilemap.js"></script>
         <script src="assets/js/app.js"></script> 
+
+        <script type="text/javascript" src="jquery.pageslide.min.js"></script>
 
 </body>
 </html> 

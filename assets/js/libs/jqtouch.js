@@ -223,7 +223,7 @@
                 }
 
                 fromPage.unselect();
-			
+
                 setHash($currentPage.attr('id'));
 
                 // Trigger custom events
@@ -707,7 +707,7 @@
                 $currentPage = $('#jqt > .current');
             }
             
-            .// setHash($currentPage.attr('id'));
+            setHash($currentPage.attr('id'));
             addPageToHistory($currentPage);
 
             if ($(startHash).length === 1) {
