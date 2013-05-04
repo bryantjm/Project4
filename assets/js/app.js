@@ -246,8 +246,7 @@ var browserSupportFlag =  new Boolean();
           $state.val(row.state);  
           $zip.val(row.zipcode);
           
-          jQT.goTo('#edit', 'slideup');   
-          
+          $.pageslide({ direction: 'right', href:'#edit' }); 
         });
       }
     }
